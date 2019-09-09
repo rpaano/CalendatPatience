@@ -25,7 +25,7 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+            <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
             <br />
             <br />
             <asp:Label ID="lblResult" runat="server"></asp:Label>

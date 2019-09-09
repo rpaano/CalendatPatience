@@ -79,5 +79,14 @@ namespace CalendatPatience
                 e.Cell.Controls.Add(lbl);
             }
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            lblResult.Text = "You have selected <br />";
+
+            lblResult.Text += Calendar1.SelectedDate.ToLongDateString() + " <br />";
+
+            lblResult.Text += "Time " + lstTimes.Text;
+        }
     }
 }
