@@ -41,10 +41,20 @@ namespace CalendatPatience
 
         protected void Calendar1_DayRender(object sender, DayRenderEventArgs e)
         {
+
+            //Original
+            /*
             if (e.Day.IsWeekend)
+            {
+                e.Day.IsSelectable = false;
+            }
+            */
+            if (e.Day.Date.DayOfWeek == DayOfWeek.Sunday)
             {
                 e.Day.IsSelectable = false; 
             }
+
+            //Original
             /*
             if (e.Day.Date.Day == 15 && e.Day.Date.Month == 3)
             {
